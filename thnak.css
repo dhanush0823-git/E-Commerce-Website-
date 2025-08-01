@@ -1,0 +1,15 @@
+.thank {
+    display: flex;                /* enables flexbox */
+    justify-content: center;      /* center horizontally */
+    align-items: center;          /* center vertically */
+    width: 100%;                  /* full width */
+    height: 100vh;                /* full screen height */
+    background-color: #f9f9f9;    /* optional background */
+}
+
+.thank img {
+    max-width: 90%;               /* image fits inside screen */
+    height: auto;                 /* maintains aspect ratio */
+    border-radius: 10px;          /* optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional shadow */
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auriva - Premium Women's Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">AURIVA</h1>
+    <nav id="nav-links" class="nav-links">
+      <a href="#collection">Collection</a>
+      <a href="#" onclick="toggleLoginForm()">Login</a>
+      <a href="#" onclick="toggleSignupForm()">Sign Up</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+  </header>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="toggleLoginForm()">&times;</span>
+      <h2>Login to Auriva</h2>
+      <input type="text" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="handleLogin()">Login</button>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="toggleSignupForm()">&times;</span>
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="handleSignup()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+   
+    <h1>Welcome to Auriva</h1>
+    <p>Where Elegance Meets Affordability</p>
+  </section>
+   
+
+  <!--Advertisement-->
+
+  <div class="add-wrapper">
+  <div class="add">
+    <img src="add.png" alt="Left Image">
+  </div>
+  <div class="add1">
+    <img src="1.png" alt="Right Image">
+  </div>
+</div>
+  <!-- Search -->
+ <section class="search-section">
+    <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search for clothing..." />
+  </section>
+
+  <!-- Collection -->
+  <section id="collection" class="collection">
+    <h2>Our Collection</h2>
+    <div class="cards" id="productCards">
+      <div class="card">
+        <img src="Kurti.webp" alt="Kurtis" />
+        <h3>Elegant Kurtis</h3>
+        <h2>$650</h2>
+        <p>Premium fabric with stylish cuts</p>
+        <button onclick="goToPayment()">Proceed to Payment</button>
+      </div>
+      <div class="card">
+        <img src="Saree.avif" alt="Sarees" />
+        <h3>Festive Sarees</h3>
+        <p>Traditional wear with a modern twist</p>
+         <h2>$650</h2>
+        <button onclick="goToPayment()">Proceed to Payment</button>
+      </div>
+      <div class="card">
+        <img src="Western.webp" alt="Western Wear" />
+        <h3>Chic Western Wear</h3>
+        <p>party — always elegant</p>
+         <h2>$650</h2>
+        <button onclick="goToPayment()">Proceed to Payment</button>
+        </div>
+        <div class = "card">
+            <img src="Casual.webp" alt="Casual Wear" />
+            <h3>Womens-Casual Wear</h3>
+            <p>Casual Wear</p>
+             <h2>$650</h2>
+            <button onclick="goToPayment()">Proceed to Payment</button>
+            </div>
+        <div class = "card" >
+            <img src ="Shoe-Womens.avif" alt="Shoe">
+            <h3>Shoes for Womens</h3>
+            <p>Casual & Formal Shoes</p>
+               <h2>$650</h2>
+            <button onclick="goToPayment()">Proceed to Payment</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Auriva. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

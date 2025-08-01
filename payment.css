@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff5f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1 {
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.payment-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.payment-container .btn,
+.payment-container button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.payment-container button:hover,
+.payment-container .btn:hover {
+  background-color: #c02675;
+}
+.payment-form p {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.payment-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0px;
+  color: #333;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.confirmpayment{
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  
+}
+.btn{
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+}

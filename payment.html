@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Auriva</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Payment Page</h1>
+    <p>This is a placeholder. Integrate Razorpay, Stripe, or UPI later.</p>
+
+<form class="payment-form">
+  <p>
+    <label for="name">Name</label><br />
+    <input type="text" id="name" name="name" required />
+  </p>
+
+  <p>
+    <label for="date">Date</label><br />
+    <input type="date" id="date" name="date" required />
+  </p>
+
+  <p>
+    <label for="place">Place</label><br />
+    <input type="text" id="place" name="place" required />
+  </p>
+
+  <p>
+    <label for="amount">Amount (₹)</label><br />
+    <input type="number" id="amount" name="amount" required min="1" />
+  </p>
+
+  <!-- Confirm Button -->
+  <button type="submit" id="confirmPayment" class="btn">Confirm Payment</button>
+</form>
+
+    <!-- Button: Back to Home -->
+   <button type="submit" id="confirmPayment" class="btn">Back To Home</button>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>
